@@ -1,11 +1,23 @@
 #Lista de Integrantes:
 #
 # 1. Santillan Jason
+#    Ing. en Ciencias de la Computación
+#
 # 2. Rosario Cruz Rodrigo
+#    Ing. en Ciencias de la Computación
+#
 # 3. Rodrigo Walter Andre Basilio
+#    Ing. en Ciencias de la Computación
+#
 # 4. 
+#
+#
 # 5.
+#
+#
 # 6.
+#
+#
 
 import random
 from time import sleep
