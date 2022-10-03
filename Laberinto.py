@@ -83,11 +83,11 @@ def crear_mapa_laberinto(numero_filas, numero_columnas, numero_paredes, numero_e
 
 
 
-numero_filas = int(input('Introduzca el número de filas del laberinto: '))
-numero_columnas = int(input('Introduzca el número de columnas del laberinto: '))
-numero_paredes = int(input('Introduzca el número de paredes del laberinto: '))
+numero_filas = int(input('Introduzca el número de Filas del laberinto: '))
+numero_columnas = int(input('Introduzca el número de Columnas del laberinto: '))
+numero_paredes = int(input('Introduzca el número de Paredes del laberinto: '))
 numero_espacios = numero_filas * numero_columnas - numero_paredes
-numero_pelotas = 3
+numero_pelotas = int(input('Introduzca el número de Pelotas del laberinto: '))
 
 laberinto = crear_mapa_laberinto(numero_filas, numero_columnas, numero_paredes, numero_espacios, numero_pelotas)
 
@@ -149,7 +149,7 @@ for fila_mapa_laberinto in laberinto:
     print(fila_mapa_laberinto)
 sleep(5)
 
-while pelotas_encontradas<3:
+while pelotas_encontradas<numero_pelotas:
     direccion = random.randrange(4) #Generamos una dirección aleatoria al cual se movera el caracter
     if direccion == 0:
         if(fila_actual == numero_filas-1): #Nos aseguramos de que no se salga del laberinto
