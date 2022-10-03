@@ -15,9 +15,8 @@
 # 5. Choque Cruz Flavio Denylson
 #    Ing. de Sistemas
 #
-# 6.
-#
-#
+# 6. Walter Freddy Canaviri Parraga
+#    Ing. de Sistemas
 
 import random
 from time import sleep
