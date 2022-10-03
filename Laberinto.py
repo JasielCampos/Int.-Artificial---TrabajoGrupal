@@ -1,3 +1,12 @@
+#Lista de Integrantes:
+#
+# 1. Santillan Jason
+# 2. Rosario Cruz Rodrigo
+# 3. Rodrigo Walter Andre Basilio
+# 4. 
+# 5.
+# 6.
+
 import random
 from time import sleep
 
