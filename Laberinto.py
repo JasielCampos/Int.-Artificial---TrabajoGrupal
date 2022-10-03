@@ -9,11 +9,11 @@
 # 3. Rodrigo Walter Andre Basilio
 #    Ing. en Ciencias de la Computación
 #
-# 4. 
+# 4. Adriana Jasiel Campos Romero
+#    Ing. en Ciencias de la Computación
 #
-#
-# 5.
-#
+# 5. Choque Cruz Flavio Denylson
+#    Ing. de Sistemas
 #
 # 6.
 #
