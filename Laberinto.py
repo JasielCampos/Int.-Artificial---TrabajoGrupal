@@ -144,7 +144,12 @@ cantidad_movimientos = 1000
 delay = 0.1
 pelotas_encontradas = 0
 
-while cantidad_movimientos > 0 and pelotas_encontradas<3:
+#Mostrar el laberinto para identificar a las posiciones visualmente
+for fila_mapa_laberinto in laberinto:
+    print(fila_mapa_laberinto)
+sleep(5)
+
+while pelotas_encontradas<3:
     direccion = random.randrange(4) #Generamos una dirección aleatoria al cual se movera el caracter
     if direccion == 0:
         if(fila_actual == numero_filas-1): #Nos aseguramos de que no se salga del laberinto
@@ -157,10 +162,11 @@ while cantidad_movimientos > 0 and pelotas_encontradas<3:
             laberinto[fila_actual][columna_actual] = " "
             fila_actual += 1
             laberinto[fila_actual][columna_actual] = "*"
-            cantidad_movimientos -= 1
-            print("Movimientos restantes: " + str(cantidad_movimientos))
+            # cantidad_movimientos -= 1
+            # print("Movimientos restantes: " + str(cantidad_movimientos))
             for fila_mapa_laberinto in laberinto:
                 print(fila_mapa_laberinto)
+            print("---------------------------------")
             sleep(delay)
         else:
             continue
@@ -175,10 +181,11 @@ while cantidad_movimientos > 0 and pelotas_encontradas<3:
             laberinto[fila_actual][columna_actual] = " "
             fila_actual -= 1
             laberinto[fila_actual][columna_actual] = "*"
-            cantidad_movimientos -= 1
-            print("Movimientos restantes: " + str(cantidad_movimientos))
+            # cantidad_movimientos -= 1
+            # print("Movimientos restantes: " + str(cantidad_movimientos))
             for fila_mapa_laberinto in laberinto:
                 print(fila_mapa_laberinto)
+            print("---------------------------------")
             sleep(delay)
         else:
             continue
@@ -193,10 +200,11 @@ while cantidad_movimientos > 0 and pelotas_encontradas<3:
             laberinto[fila_actual][columna_actual] = " "
             columna_actual += 1
             laberinto[fila_actual][columna_actual] = "*"
-            cantidad_movimientos -= 1
-            print("Movimientos restantes: " + str(cantidad_movimientos))
+            # cantidad_movimientos -= 1
+            # print("Movimientos restantes: " + str(cantidad_movimientos))
             for fila_mapa_laberinto in laberinto:
                 print(fila_mapa_laberinto)
+            print("---------------------------------")
             sleep(delay)
         else:
             continue
@@ -211,10 +219,11 @@ while cantidad_movimientos > 0 and pelotas_encontradas<3:
             laberinto[fila_actual][columna_actual] = " "
             columna_actual -= 1
             laberinto[fila_actual][columna_actual] = "*"
-            cantidad_movimientos -= 1
-            print("Movimientos restantes: " + str(cantidad_movimientos))
+            # cantidad_movimientos -= 1
+            # print("Movimientos restantes: " + str(cantidad_movimientos))
             for fila_mapa_laberinto in laberinto:
                 print(fila_mapa_laberinto)
+            print("---------------------------------")
             sleep(delay)
         else:
             continue
